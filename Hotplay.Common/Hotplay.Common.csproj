@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FubarDev.WebDavServer" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.AspNetCore" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.FileSystem.DotNet" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.FileSystem.InMemory" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.FileSystem.SQLite" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.Locking.InMemory" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.Locking.SQLite" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.Props.Store.InMemory" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.Props.Store.SQLite" Version="1.0.1" />
+    <PackageReference Include="FubarDev.WebDavServer.Props.Store.TextFile" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
