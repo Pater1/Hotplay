@@ -17,6 +17,8 @@ namespace Hotplay.Common {
             return StaticDisposalAssistent.TrackForDisposal(toTrack);
         }
 
+        private DisposalAssistant() { }
+
         private List<IDisposable> toDispose = new List<IDisposable>();
         public T TrackForDisposal<T>(T toTrack) where T : IDisposable {
             toDispose.Add(toTrack);
